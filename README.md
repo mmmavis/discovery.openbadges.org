@@ -1,0 +1,2 @@
+discovery.openbadges.org
+========================
