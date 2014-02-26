@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Parallax Testing</title>
+    <script style="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/OpenSans.css" />
+    <link rel="stylesheet" href="//www.mozilla.org/tabzilla/media/css/tabzilla.css" />
+    <style>
+
+      body{
+        background: #222;
+        color: #fff;
+        font-family: "Open Sans Light", Arial;
+      }
+
+      .left{
+        float: left;
+      }
+
+      .right{
+        float: right;
+      }
+
+      .center{
+        text-align: center;
+      }
+
+      h1{
+        text-transform: uppercase;
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+
+      .wrapper{
+        margin: 0 auto;
+        width: 960px;
+        overflow: hidden;
+      }
+
+      #header{
+        background: #fff;
+      }
+
+      #header img{
+        margin: 25px 0;
+      }
+
+      footer{
+        background: #fff;
+        height: 150px;
+        color: #222;
+        padding-top: 20px;
+      }
+
+      .container{
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+      }
+
+      .container article{
+        width: 100%;
+        overflow: hidden;
+      }
+
+      article p{
+        line-height: 170%;
+      }
+
+      .pull-indicator{
+        position: absolute;
+        bottom: -25px;
+        right: calc( 50% - 13.5px );
+        z-index: 100;
+        width: 55px;
+        height: 27px;
+      }
+
+      #first {
+        background: #F26964;
+      }
+
+      #first .wrapper {
+        background: url(images/discovery_splash_page_handimage_retina.png) #F26964 0 50px no-repeat;
+        background-size: 520px;
+      }
+
+      #first .text{
+        width: 40%;
+        margin-top: 50px;
+        margin-bottom: 100px;
+      }
+
+      #second {
+        background: url(images/discovery_splash_page_discoverpath@2x.png) #FFD464 center center no-repeat;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        padding: 100px 0;
+      }
+
+      #second .text{
+        width: 35%;
+        margin-top: 50px;
+        margin-bottom: 100px;
+      }
+
+      #third{
+        background: #1352A2;
+      }
+
+      #third .text{
+        width: 50%;
+        margin-top: 180px;
+        margin-bottom: 100px;
+      }
+
+      #advisory-group{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 50%;
+        overflow: hidden;
+      }
+
+      .advisor{
+        text-align: center;
+        margin: 5px;
+        width: 40%;
+        font-size: 12px;
+      }
+
+      .thumbnail img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: #fff;
+        margin-bottom: 5px;
+      }
+
+      #sign-up-form input[type="email"]{
+        width: 65%;
+        margin-right: 5%;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 5px;
+        border: none;
+      }
+
+      #sign-up-form button{
+        background: #1352A2;
+        border: none;
+        color: #fff;
+        font-size: 12px;
+        width: 25%;
+        padding: 10px 0;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div class="wrapper">
+        <a href="http://www.mozilla.org/" id="tabzilla">mozilla</a>
+        <img src="images/Discovery_Logo-01.png" class="left"/>
+      </div>
+    </div>
+    <!-- FIRST SEGMENT ==================== -->
+    <div id="first" class="container">
+      <div class="wrapper">
+        <article>
+          <div class="text right">
+            <h1>Navigate Your Potential with Open Badges</h1>
+            <p>
+              Explore an ecosystem of digital badges, created in partnership with industry leaders and professionals in emerging fields such as Technology, Healthcare and Service to discover learning opportunities that are right for you.
+            </p>
+            <div>
+              <form id="sign-up-form">
+                <input type="email" placeholder="Oh! I'm interested. Email me updates please" class="left" />
+                <button type="submit" class="left">Sign Up</button>
+              </form>
+            </div>
+          </div>
+        </article>
+        <div class="center">
+          <img class="pull-indicator" src="images/discovery_splash_page_arrow@2x.png" />
+        </div>
+      </div>
+    </div>
+    <!-- SECOND SEGMENT ==================== -->
+    <div id="second" class="container">
+      <div class="wrapper">
+        <article>
+          <div class="text left">
+            <h1>Got Badges? Now Pave <br />Your Pathway.</h1>
+            <p>
+              Discover a network of pathways that can be personalized to meet your individual learning needs. Explore careers through a map of digital badges that connects to specific learning experiences. Get inspired by the story of real world professionals who work in growing industry fields and pave your own career path.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="center">
+          <img class="pull-indicator" src="images/discovery_splash_page_arrow2@2x.png" />
+        </div>
+    </div>
+    <!-- THIRD SEGMENT ==================== -->
+    <div id="third" class="container">
+      <div class="wrapper">
+        <article>
+          <div id="advisory-group" class="left">
+            <div class="advisor left">
+              <div class="thumbnail"><img src="images/Mike_Marriner.jpg"></div>
+              <div class="description">
+                <div class="name">Mike Marriner</div>
+                <p>
+                  Cofounder, Roadtrip Nation
+                </p>
+              </div>
+            </div>
+            <div class="advisor left">
+              <div class="thumbnail"><img src="images/John_dillow.png"></div>
+              <div class="description">
+                <div class="name">John Dillow</div>
+                <p>
+                  Co-founder, Workforce.io
+                </p>
+              </div>
+            </div>
+            <div class="advisor left">
+              <div class="thumbnail"><img src="images/constance_steinkuehler.jpg"></div>
+              <div class="description">
+                <div class="name">Constance Steinkuehler</div>
+                <p>
+                  Co-Director, Games+Learning+Society Center <br />
+                  Wisconsin Institute for Discovery <br />
+                  Associate Professor, Curriculum & Instruction <br />
+                  University of Wisconsin-Madison
+                </p>
+              </div>
+            </div>
+            <div class="advisor left">
+              <div class="thumbnail"><img src="images/Lissa_Soep.jpg"></div>
+              <div class="description">
+                <div class="name">Elisabeth (Lissa) Soep, PhD</div>
+                <p>
+                  Senior Producer & Research Director, Youth Radio
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="text right">
+            <h1>Advisory Group</h1>
+            <p>
+              Based on recent labor market research findings, the Discovery project aims to address the needs and expectations of employers and high school youth entering the job market. This project is generously supported by the Bill and Melinda Gates foundation with input from an esteemed advisory group.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="wrapper">
+        - header/footer placeholder; refer to <a href="https://f.cloud.github.com/assets/6484937/2251591/302de62c-9d9e-11e3-8c07-ee7f783fb625.jpg">here</a> <br />
+        - down arrow: click to slide in the next slide <br />
+        - mobile view <br />
+        - form
+      </div>
+      <script src="//www.mozilla.org/tabzilla/media/js/tabzilla.js"></script>
+    </footer>
+  </body>
+</html>
