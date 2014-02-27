@@ -1,0 +1,199 @@
+body{
+  margin: 0;
+  background: #222;
+  color: #fff;
+  font-family: "Open Sans Light", Arial;
+}
+
+a {
+  color: #63c6f4;
+  text-decoration: none;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.center{
+  text-align: center;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.wrapper{
+  margin: 0 auto;
+  width: 960px;
+  overflow: hidden;
+}
+
+#header{
+  background: #ebf0e8;
+}
+
+#header img{
+  margin: 25px 0;
+}
+
+.container{
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.container article{
+  width: 100%;
+  overflow: hidden;
+}
+
+article p{
+  line-height: 170%;
+}
+
+.pull-indicator{
+  position: absolute;
+  bottom: -25px;
+  right: calc( 50% - 13.5px );
+  z-index: 100;
+  width: 55px;
+  height: 27px;
+}
+
+#first {
+  background: #F26964;
+}
+
+#first .wrapper {
+  background: url(../images/discovery_splash_page_handimage_retina.png) #F26964 0 50px no-repeat;
+  background-size: 520px;
+}
+
+#first .text{
+  width: 40%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#second {
+  padding: 50px 0;
+  background: #FFD464;
+}
+
+#second .wrapper{
+  background: url(../images/discovery_splash_page_discoverpath@2x.png) #FFD464 center center no-repeat;
+    -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+
+#second .text{
+  width: 37%;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+#third{
+  background: #1352A2;
+}
+
+#third .text{
+  width: 50%;
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
+
+#advisory-group{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 50%;
+  overflow: hidden;
+}
+
+.advisor{
+  text-align: center;
+  margin: 5px;
+  width: 40%;
+  font-size: 12px;
+}
+
+.thumbnail img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #fff;
+  margin-bottom: 5px;
+}
+
+#sign-up-form input[type="email"]{
+  width: 65%;
+  margin-right: 5%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 5px;
+  border: none;
+}
+
+#sign-up-form button{
+  background: #1352A2;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  width: 25%;
+  padding: 10px 0;
+}
+
+.table {
+  width: 60%;
+  display: table;
+  padding: 0 20px;
+}
+
+.table a{
+  color: #777;
+}
+
+.header-row {
+  line-height: 3em;
+}
+
+.header-row .table-cell{
+  font-weight: bold;
+}
+
+.table-cell {
+  width: 20%;
+  display: table-cell;
+}
+
+.wide-cell { width: 40%; }
+.table-row { display: table-row; }
+
+#footer{
+  background: #ebf0e8;
+  color: #222;
+  padding-top: 20px;
+}
+
+.footer-container {
+  padding: 30px 9% 15px 9%;
+}
+
+.footer-container .footnote-container,
+.footer-container .footer-menu {
+  margin: 0 4%;
+}
+
+.openbadges-logo {
+  width: 20%;
+  height: auto;
+  margin-left: -20px;
+}
