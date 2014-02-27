@@ -4,3 +4,10 @@
   font-weight: 400;
   src: url('../fonts/OpenSans-Light.ttf') format('truetype')
 }
+
+@font-face {
+  font-family: 'Open Sans ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype')
+}

@@ -24,6 +24,7 @@ a {
 
 h1{
   text-transform: uppercase;
+  font-family: "Open Sans ExtraBold", Arial;
   font-size: 40px;
   margin-bottom: 10px;
 }
@@ -35,7 +36,7 @@ h1{
 }
 
 #header{
-  background: #ebf0e8;
+  background: #E6E6E6;
 }
 
 #header img{
@@ -84,17 +85,12 @@ article p{
 
 #second {
   padding: 50px 0;
-  background: #FFD464;
-}
-
-#second .wrapper{
-  background: url(../images/discovery_splash_page_discoverpath@2x.png) #FFD464 center center no-repeat;
+  background: url(../images/New_Pathway_Illustration.png) #FFD464 center center no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
 }
-
 
 #second .text{
   width: 37%;
@@ -116,6 +112,10 @@ article p{
   margin-top: 100px;
   margin-bottom: 100px;
   width: 50%;
+  overflow: hidden;
+}
+
+.row{
   overflow: hidden;
 }
 
@@ -170,20 +170,24 @@ article p{
 }
 
 .header-row .table-cell{
+  font-family: "Open Sans", Arial;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .table-cell {
+  font-family: "Open Sans", Arial;
   width: 20%;
   display: table-cell;
+  font-size: 12px;
 }
 
 .wide-cell { width: 40%; }
 .table-row { display: table-row; }
 
 #footer{
-  background: #ebf0e8;
-  color: #222;
+  background: #E6E6E6;
+  color: #4E4F53;
   padding-top: 20px;
 }
 
