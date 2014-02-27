@@ -33,7 +33,7 @@
           </div>
         </article>
         <div class="center">
-          <img class="pull-indicator" src="images/discovery_splash_page_arrow@2x.png" />
+          <img class="scroll-toggle" src="images/discovery_splash_page_arrow@2x.png" />
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@
         </article>
       </div>
       <div class="center">
-          <img class="pull-indicator" src="images/discovery_splash_page_arrow2@2x.png" />
+          <img class="scroll-toggle" src="images/discovery_splash_page_arrow2@2x.png" />
         </div>
     </div>
     <!-- THIRD SEGMENT ==================== -->
@@ -172,5 +172,20 @@
       </div>
     </footer>
     <script src="//www.mozilla.org/tabzilla/media/js/tabzilla.js"></script>
+    <script>
+      $(".scroll-toggle").click(function(){
+        var nextSlide = $(this).parents(".container").next();
+
+        $("html").animate({
+          scrollTop: nextSlide.offset().top
+        });
+      });
+
+      $("#scroll-toggle-2").click(function(){
+        $("html").animate({
+          scrollTop: $("#third").offset().top
+        });
+      });
+    </script>
   </body>
 </html>

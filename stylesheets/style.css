@@ -57,13 +57,14 @@ article p{
   line-height: 170%;
 }
 
-.pull-indicator{
+.scroll-toggle{
   position: absolute;
   bottom: -25px;
   right: calc( 50% - 13.5px );
   z-index: 100;
   width: 55px;
   height: 27px;
+  cursor: pointer;
 }
 
 #first {
@@ -88,7 +89,7 @@ article p{
 
 #second .wrapper{
   background: url(../images/discovery_splash_page_discoverpath@2x.png) #FFD464 center center no-repeat;
-    -webkit-background-size: contain;
+  -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
