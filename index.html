@@ -175,7 +175,7 @@
     <script>
       $(".scroll-toggle").click(function(){
         var nextSlide = $(this).parents(".container").next();
-        $("body").animate({
+        $("html, body").animate({
           scrollTop: nextSlide.offset().top
         });
       });
