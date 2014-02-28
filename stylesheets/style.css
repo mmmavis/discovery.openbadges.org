@@ -41,6 +41,7 @@ h1{
 
 #header img{
   margin: 25px 0;
+  width: 200px;
 }
 
 .container{
@@ -131,6 +132,11 @@ article p{
   float: left;
 }
 
+.name {
+  font-family: "Open Sans", Arial;
+  font-weight: bold;
+}
+
 .thumbnail img{
   width: 120px;
   height: 120px;
@@ -185,6 +191,7 @@ footer a {
   font-family: "Open Sans", Arial;
   font-weight: bold;
   font-size: 14px;
+  margin-bottom: 15px;
 }
 
 #footer-links section {
@@ -207,15 +214,6 @@ footer a {
 
 #open-badges-logo img{
   width: 200px;
-}
-
-#supported-by {
-  font-family: "Open Sans", Arial;
-  font-size: 12px;
-  position: relative;
-  left: 55px;
-  top: -15px;
-  width: 100%;
 }
 
 
