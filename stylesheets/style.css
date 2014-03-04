@@ -87,7 +87,7 @@ article p{
 
 #second {
   padding: 50px 0;
-  background: url(../images/pathway_illustration.png) #FFD464 center center no-repeat;
+  background: url(../images/pathway-illustration-01.png) #FFD464 center center no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -151,6 +151,7 @@ article p{
   padding-bottom: 11px;
   padding-left: 5px;
   border: none;
+  border-radius: 5px;
 }
 
 #sign-up-form button{
@@ -281,20 +282,18 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 25px;
+  }
+
   #first .container {
     background: url(../images/discovery_splash_page_handimage@2x.png) #F26964 0 100% no-repeat;
     background-size: 250px;
   }
-  #second .text {
+/*  #second .text {
     width: 100%;
     margin-bottom: 200px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  h1 {
-    font-size: 25px;
-  }
+  }*/
 
   #first .text {
     width: 100%;
@@ -302,11 +301,14 @@ footer a:hover {
   }
 
   #second .text {
-    margin-bottom: 130px;
+    width: 100%;
+    margin-bottom: 220px;
   }
 
   #sign-up-form input[type='email'],
   #sign-up-form button {
+    box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
     width: 100%;
     margin-bottom: 10px;
   }
@@ -321,5 +323,12 @@ footer a:hover {
 
   #footer-links section {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #second .text {
+    width: 100%;
+    margin-bottom: 160px;
   }
 }
