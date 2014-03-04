@@ -301,10 +301,18 @@ footer a:hover {
     padding-bottom: 200px;
   }
 
+  #second .text {
+    margin-bottom: 130px;
+  }
+
   #sign-up-form input[type='email'],
   #sign-up-form button {
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  #advisory-group {
+    margin-top: 30px;
   }
 
   .advisor {
