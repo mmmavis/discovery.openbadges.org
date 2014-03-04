@@ -62,7 +62,7 @@ article p{
 .scroll-toggle {
   position: absolute;
   bottom: -25px;
-  right: calc( 50% - 13.5px );
+  right: calc( 50% - 27.5px );
   z-index: 100;
   width: 55px;
   height: 27px;
@@ -87,7 +87,7 @@ article p{
 
 #second {
   padding: 50px 0;
-  background: url(../images/New_Pathway_Illustration.png) #FFD464 center center no-repeat;
+  background: url(../images/pathway_illustration.png) #FFD464 center center no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -141,7 +141,6 @@ article p{
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: #fff;
   margin-bottom: 5px;
 }
 
@@ -175,6 +174,10 @@ footer {
 
 footer a {
   color: #4E4F53;
+}
+
+footer a:hover {
+  color: #63c6f4;
 }
 
 #footer-logo-container {
@@ -289,6 +292,21 @@ footer a {
 }
 
 @media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  #first .text {
+    width: 100%;
+    padding-bottom: 200px;
+  }
+
+  #sign-up-form input[type='email'],
+  #sign-up-form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
   .advisor {
     width: 100%;
   }
