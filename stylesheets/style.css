@@ -18,6 +18,10 @@ a {
   float: right;
 }
 
+.hidden {
+  display: none;
+}
+
 .center{
   text-align: center;
 }
@@ -161,6 +165,24 @@ article p{
   font-size: 12px;
   width: 25%;
   padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#sign-up-form button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+#sign-up-form input:not(button).invalid-field {
+  border: 2px solid #ff0000;
+}
+
+#thanks-for-signup {
+  background: #fff;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
 }
 
 
@@ -290,10 +312,6 @@ footer a:hover {
     background: url(../images/discovery_splash_page_handimage@2x.png) #F26964 0 100% no-repeat;
     background-size: 250px;
   }
-/*  #second .text {
-    width: 100%;
-    margin-bottom: 200px;
-  }*/
 
   #first .text {
     width: 100%;
