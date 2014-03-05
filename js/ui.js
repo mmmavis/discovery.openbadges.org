@@ -13,7 +13,7 @@ $(document).ready(function(){
       complete: function(jqXHR,textStatus){
         // show response message to user, on a notifacation bar
         if ( textStatus != "success" ){
-          $("#thanks-for-signup .container").html("Uh oh, something went wrong! Please try entering your information again.");
+          $("#thanks-for-signup .container p").html("Uh oh, something went wrong! Please try entering your information again.");
         }
         $("#sign-up-form input[name='EMAIL']").val("");
         $("#thanks-for-signup").slideDown(500,function(){
