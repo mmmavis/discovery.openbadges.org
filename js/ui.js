@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  // submit handler for the sign up form
   var sendForm = function(event){
     var form = $("#sign-up-form");
     event.preventDefault();
@@ -9,21 +10,8 @@ $(document).ready(function(){
       type: form.attr('method'),
       contentType: "application/json; charset=utf-8",
       dataType: "json",
-      beforeSend: function(){
-        console.log(form.attr("action"));
-        console.log(form.serialize());
-      },
-      success: function(data, textStatus, jqXHR){
-        console.log("=======");
-      },
-      error: function(jqXHR, textStatus, errorThrown){
-        console.log(jqXHR);
-        console.log(textStatus);
-        console.log(errorThrown);
-      },
       complete: function(jqXHR,textStatus){
-        console.log(jqXHR);
-        console.log(textStatus);
+        // show response message to user, on a notifacation bar
         if ( textStatus != "success" ){
           $("#thanks-for-signup .container").html("Uh oh, something went wrong! Please try entering your information again.");
         }
@@ -43,12 +31,14 @@ $(document).ready(function(){
     $("#sign-up-form").unbind("submit", sendForm);
   }
 
+  // validate the from as user types
   $("#sign-up-form").keyup(function(event){
      if ( validateForm($(this)) ){
       $("#sign-up-form").unbind("submit", sendForm).bind("submit", sendForm);
      }
   });
 
+  // form validator
   function validateForm(form){
     var fields = form.find("input");
     $.each(fields,function(i,field){

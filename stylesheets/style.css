@@ -325,8 +325,8 @@ footer a:hover {
 
   #sign-up-form input[type='email'],
   #sign-up-form button {
-    box-sizing: padding-box;
-    -moz-box-sizing: padding-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
     width: 100%;
     margin-bottom: 10px;
   }
