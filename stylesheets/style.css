@@ -178,6 +178,26 @@ article p{
   border: 2px solid #ff0000;
 }
 
+#privacy {
+  float: left;
+}
+
+#privacy #privacy-check {
+  float: left;
+}
+
+#sign-up-form #privacy #privacy-text {
+  font-size: 12px;
+  line-height: 12px;
+  float: left;
+  width: 85%;
+  margin-top: 5px;
+}
+
+#sign-up-form #privacy-text.invalid-field {
+}
+
+
 #thanks-for-signup {
   background: #fff;
   text-align: center;
