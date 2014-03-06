@@ -175,7 +175,7 @@ article p{
 }
 
 #sign-up-form input:not(button).invalid-field {
-  border: 2px solid #ff0000;
+  border: 2px solid #45B7B1;
 }
 
 #privacy {
